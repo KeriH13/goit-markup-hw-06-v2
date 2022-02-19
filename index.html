@@ -401,29 +401,25 @@
         </div>
 
 
-        <div class="footer__form-newsletter">
-            <form>
-                <p class="footer-icons-newsletter">zapisz się do newslettera</p>
+            <form class="footer-form">
+                <p class="footer__header-newsletter">zapisz się do newslettera</p>
                 <label for="email">
-                    <input type="email" id="email" placeholder="E-mail" required />
+                    <input class="input__content" type="email" id="email" name="email" placeholder="E-mail" required />
                 </label>
-                    <button class="btn" type="submit"><span>zapisz się</span>
+                    <button class="btn footer__btn-content" type="submit"><span class="footer__sign-up">zapisz się</span>
                         <svg class="footer__icon-newsletter">
-                            <use href="./images/icons.svg#send.svg"><use>
+                            <use href="./images/icons.svg#icon-send"><use>
                         </svg>
                     </button>
             </form>
-        </div>
-
 
     </div>
     </div>
     </footer>
-<!-- ADD SVG ICON "vector.svg" !!!!!!!!!!!!!!!!!!!!!!!!-->
 
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <button type="button" class="close-btn" data-modal-close><span class="modal__svg-icon"></span>
+        <button type="button" class="close-btn" data-modal-close>
         <svg class="vector-svg">
             <use href="../images/icons.svg#icon-vector"></use>
         </svg>
