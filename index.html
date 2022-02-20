@@ -420,38 +420,56 @@
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <!-- <form class="" action="" method="post"> -->
-            <form>
+            <form class="modal__form">
             <p class="modal__header-text">Zostaw swoje dane w formularzu poniżej</p>
             <label for="username" class="modal__label-content">
                 <span class="modal__text">Imię</span>
+                <div class="input__content-wrapper">
                 <input id="username" type="text" name="group-modal" class="modal__input-content" required />
                 <svg class="modal__icon">
-                    <use href="../images/icons.svg#icon-user" width="12" height="12"></use>
+                    <use href="../images/icons.svg#icon-user"></use>
                 </svg>
+            </div>
             </label>
             <label for="phone" class="modal__label-content">
                 <span class="modal__text">Telefon</span>
+                <div class="input__content-wrapper">
                 <input id="phone" type="tel" name="group-modal" class="modal__input-content" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                <svg class="modal__icon">
+                    <use href="../images/icons.svg#icon-phone"></use>
+                </svg>
+                </div>
             </label>
             <label for="email" class="modal__label-content">
                 <span class="modal__text">E-mail</span>
+                <div class="input__content-wrapper">
                 <input id="email" type="email" name="group-modal" class="modal__input-content" pattern=".+@globex\.com" size="30" required />
+                <svg class="modal__icon">
+                    <use href="../images/icons.svg#icon-envelope-modal"></use>
+                </svg>
+                </div>
             </label>
             <label for="feedback" class="modal__label-content">
                 <span class="modal__text">Komentarz</span>
                 <textarea id="feedback" type="text" name="group-modal" class="modal__textarea-content" placeholder="Wprowadź tekst" required></textarea>
             </label>
             
-            <!-- <div class="modal__checkbox-wrapper"> -->
                 <div class="modal__disclaimer-container">
                     <input id="checkbox-disclaimer" type="checkbox" class="input-checkbox-policy" name="declaration" required />
-                    <label for="checkbox-disclaimer" class="policy-label">Oświadczam iż akceptuję <a href="#" class="modal-policy-link">Regulamin </a>i <a href="#" class="modal-policy-link">Politykę Prywatności.</a>
-                        <svg class="icon-checkbox">
-                            <use href="../images/icons.svg#icon-icon-check-modal"></use>
-                        </svg>
+                    <!-- <svg class="icon-checkbox">
+                        <use href="../images/icons.svg#icon-icon-check-modal"></use>
+                    </svg> -->
+                    <label for="checkbox-disclaimer" class="policy-label"><span class="disclaimer-text-position">Oświadczam iż akceptuję <a href="#" class="modal-policy-link">Regulamin </a>i <a href="#" class="modal-policy-link">Politykę Prywatności.</a></span>
                     </label>
-                </div>
-            <!-- </div> -->
+
+
+
+                    <button type="submit" class="btn modal__btn">
+                        <span class="modal__btn-text">Wyślij</span>
+                    </button>
+                </div>            
+           
+
 
             <button type="button" class="close-btn" data-modal-close>
             <svg class="vector-svg">
